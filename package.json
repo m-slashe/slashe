@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "commander": "^2.15.1"
+    "commander": "^2.15.1",
+    "oracledb": "^2.2.0",
+    "superagent": "^3.8.3"
   }
 }
