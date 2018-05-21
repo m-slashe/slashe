@@ -7,8 +7,10 @@ let config = require('../config.json');
 
 program
     .command('open')
-    .action(() => {
-        console.log('open called');
+	.option('-t', '--target', 'Caminho desejado')
+    .action(target => {
+        let { path } = config['open'][target];
+	    child_process.exec('start .', {cwd: path});
     });
 
 program
